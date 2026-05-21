@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+#formCad {
+  font: normal 20pt Arial;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 2rem;
+}
+
+label {
+  margin-top: 20rem;
+}
+
+input {
+  display: block;
+  margin: 1.5rem auto;
+  padding: 2px;
+  width: 30%;
+  height: 2rem;
+  border-radius: 50px;
+}
+
+button {
+  width: 30%;
+  height: 2rem;
+  background-color: rgb(56, 212, 56);
+  border-radius: 20px;
+}
+#link{
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+  
+}
