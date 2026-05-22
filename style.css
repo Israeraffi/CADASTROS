@@ -1,39 +1,106 @@
 * {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
 #formCad {
-  font: normal 20pt Arial;
-  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  background: #111827;
+  padding: 40px;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
+
 h1 {
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
 }
 
 label {
-  margin-top: 20rem;
+  display: block;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  font-weight: bold;
 }
 
 input {
-  display: block;
-  margin: 1.5rem auto;
-  padding: 2px;
-  width: 30%;
-  height: 2rem;
-  border-radius: 50px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  padding: 0 18px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.35);
+  transform: scale(1.02);
 }
 
 button {
-  width: 30%;
-  height: 2rem;
-  background-color: rgb(56, 212, 56);
-  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  background: #22c55e;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
-#link{
-  display: block;
-  text-align: center;
-  margin-top: 2rem;
-  
+
+button:hover {
+  transform: translateY(-2px);
+  background: #16a34a;
+}
+
+#link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #22c55e;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#link:hover {
+  color: #4ade80;
+}
+
+@media (max-width: 600px) {
+  #formCad {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
 }
