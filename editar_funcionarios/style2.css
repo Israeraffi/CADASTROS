@@ -63,6 +63,7 @@ div {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.08);
   overflow-x: auto;
+  white-space: pre-wrap;
 }
 
 ::-webkit-scrollbar {
@@ -91,4 +92,60 @@ div {
     width: 95%;
     padding: 20px;
   }
+}
+
+#voltar {
+  width: 20px;
+  height: 20px;
+  border-top: 4px solid rgb(255, 255, 255);
+  border-right: 4px solid rgb(255, 255, 255);
+  transform: rotate(225deg);
+  cursor: pointer;
+  display: inline-block;
+}
+
+.table {
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  font-family: monospace;
+  line-height: 1.8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.table button {
+  width: 110px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-right: 8px;
+  text-align: center;
+  
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.editar_user {
+  background: #3498db;
+  color: white;
+}
+
+.editar_user:hover {
+  transform: scale(1.05);
+}
+
+.excluir_user {
+  background: #e74c3c;
+  color: white;
+}
+
+.excluir_user:hover {
+  transform: scale(1.05);
 }
