@@ -126,26 +126,23 @@ div {
   margin-top: 12px;
   margin-right: 8px;
   text-align: center;
-  
-  align-items: center;
-  justify-content: center;
   color: white;
 }
 
-.editar_user {
+.editar {
   background: #3498db;
   color: white;
 }
 
-.editar_user:hover {
+.editar:hover {
   transform: scale(1.05);
 }
 
-.excluir_user {
+.excluir {
   background: #e74c3c;
   color: white;
 }
 
-.excluir_user:hover {
+.excluir:hover {
   transform: scale(1.05);
 }

@@ -26,7 +26,9 @@ form.addEventListener("submit", function (event) {
   const email = document.getElementById("email").value.trim();
   const dataNascimento = document.getElementById("dataNascimento").value.trim();
   const cargo = document.getElementById("cargo").value.trim();
-  const id = users.length + 1;
+  // Os ... esta sendo usado para transformar o array de Id em somente numeros
+  const id =
+    users.length > 0 ? Math.max(...users.map((user) => user.id)) + 1 : 1;
 
   if (!name || !email || !dataNascimento || !cargo) {
     alert("Preencha todos os campos!");
@@ -82,6 +84,7 @@ form.addEventListener("submit", function (event) {
     alert("Esse usuário já existe!");
     return;
   }
+
   const idade = calcularIdade(dataNascimento);
   const user = new User(id, name, email, idade, cargo);
 
